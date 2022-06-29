@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="logo.jpg"></li>
+            <li> Home </li>
+            <li> About-Us </li>
+        </ul>
+    </nav>
+    <div class="body">
+    <div class="container">
+        <h1 class="title"> Song-Playlist</h1>
+        <div class="songList">
+            <div class="songItem">
+                <img class="img1" src="song-img1.jpg" alt="1">
+                <span class="song-name"> <b> Agar Tum Saath Ho</b> </span>
+                <span class="songDisplay"> &nbsp <span class="song-time"> <b> 05:41 </b> </span> <span class="play"> <i  id="1" class="list-play far songItemPlay fa-play-circle"></i></span></span> 
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songItem">
+                <img class="img1" src="song-img2.jpg" alt="1">
+                <span class="song-name"> <b> Khairiyat </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+                <span class="songDisplay"> &nbsp <span class="song-time"> <b> 04:40 </b> </span> <span class="play"> <i id="2" class="list-play far songItemPlay fa-play-circle"></i></span></span> 
+
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songItem">
+                <img class="img1" src="song-img3.jpg" alt="1">
+                <span class="song-name"> <b> Gerua </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </span>
+                <span class="songDisplay"> &nbsp <span class="song-time"> <b> 05:46 </b> </span> <span class="play"> <i id="3" class="list-play far songItemPlay fa-play-circle"></i></span></span> 
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songItem">
+                <img class="img1" src="song-img4.jpg" alt="1">
+                <span class="song-name"> <b> Channa Mereya </b> &nbsp&nbsp&nbsp </span>
+                <span class="songDisplay"> &nbsp <span class="song-time"> <b> 04:49 </b> </span> <span class="play"> <i id="4"class="list-play far songItemPlay fa-play-circle"></i></span></span> 
+
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songItem">
+                <img class="img1" src="song-img5.jpg" alt="1">
+                <span class="song-name"> <b> Bekhayali  </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </span>
+                <span class="songDisplay"> &nbsp <span class="song-time"> <b> 06:10 </b> </span> <span class="play"> <i id="5" class="list-play far songItemPlay fa-play-circle"></i></span></span> 
+            </div>
+        </div>
+
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <div class="timestance">
+            <div id="start">00:00</div>
+            <div id="end">05:41</div>
+        </div>
+        <div class="icons">
+            <i id="sound" class="fas fa-volume-down"></i>
+            <i id="previous" class="fas  fa-step-backward"></i>
+            <i class="far fa-2x fa-play-circle" id="masterplay"></i>
+            <i id="next" class="fas  fa-step-forward"></i>
+            <i id="restart" class="fas fa-undo-alt"></i>
+        </div> <br>
+        <input type="range" name="range" id="myProgressbar" min="0" max="100" value="0">
+        <div class="songInfo"><img id="gif" src="music1.gif" width="300px" height= "50px" alt="1"><div id="text">Now Playing - Agar Tum Sath Ho</div></div>
+        <div class="nextSongInfo"><div id="nextSongText">Next Song : Khairiyat</div></div>
+    </div>
+</div>
+</body>
+<script src="https://kit.fontawesome.com/5cce1d3253.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
